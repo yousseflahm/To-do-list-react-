@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+ 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +40,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.iconButton:hover {
+  background-color: #282c34 !important; /* Dark background */
+  transition: background-color 1s, box-shadow 1s; /* Transition for background color and shadow */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  transform: translateY(-2px); /* Slight upward movement */
+}
+
+.ToDoCard:hover {
+  padding: 20px 0; /* Increase padding on hover */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+  transition: padding 0.5s, box-shadow 1s; /* Smooth transition for padding and shadow */
 }
